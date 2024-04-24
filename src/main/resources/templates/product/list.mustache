@@ -11,32 +11,13 @@
         </tr>
         </thead>
         <tbody>
-        {{#productList}}
-            <!--개인 로그인시 볼 수 있는 리스트-->
-            {{#isCheck}}
-                <tr>
-                    <td>{{id}}</td>
-                    <td>{{name}}</td>
-                    <td>{{price}}</td>
-                    <td>{{qty}}</td>
-                    <td><a href="/product/{{id}}" class="product btn btn-warning">상세보기</a></td>
-
-                </tr>
-            {{/isCheck}}
-            <!--개인 로그인시 볼 수 있는 리스트-->
-
-            <!--판매자 로그인시 볼 수 있는 리스트-->
-            {{^isCheck}}
-                <tr>
-                    <td>{{id}}</td>
-                    <td><a href="/product/{{id}}" class="product">{{name}}</a></td>
-                    <td>{{price}}</td>
-                    <td>{{qty}}</td>
-                    <td><a href="/product/{{id}}" class="product btn btn-warning">상세보기</a></td>
-                </tr>
-            {{/isCheck}}
-            <!--판매자 로그인시 볼 수 있는 리스트-->
-        {{/productList}}
+        <tr>
+            <td>1</td>
+            <td>바나나</td>
+            <td>5000</td>
+            <td>100</td>
+            <td><a href="/product/1" class="product btn btn-warning">상세보기</a></td>
+        </tr>
         </tbody>
     </table>
 
